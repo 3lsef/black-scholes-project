@@ -1,4 +1,4 @@
-#Here I am importing python's math module and only the 'norm' object from the scipy.stats as it is huge 
+#Here I am importing python's math module and only the 'norm' object from the scipy.stats 
 
 import math
 from scipy.stats import norm
@@ -20,4 +20,5 @@ C = S * norm.cdf(d1) - K * math.exp(-r * T) * norm.cdf(d2)
 P = K * math.exp(-r * T) * norm.cdf(-d2) - S * norm.cdf(-d1)
 
 print("Call option price is: £", round(C, 2))
+
 print("Put option price is: £", round(P, 2))
